@@ -1,0 +1,176 @@
+<hmtl>
+	<head>
+		<title>CSS Website Layout</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body{
+				font-family: Arial;
+				padding: 10px;
+				background: hotpink;
+				margin: 0;
+			}
+			/*style the header */
+			.header {
+				background-color: green;
+				padding: 20px;
+				text-align: center;
+				
+			}
+
+			.header{
+				padding: 30px;
+				text-align: center;
+				background: pink;
+
+			}
+
+			/*header/blog title*/
+			.header {
+				padding: 30px;
+				color:black;
+				text-align: center;
+				background-image: url(kdp.jpg);
+			}
+
+			.header h1 {
+				font-size: 50px;
+			}
+			.topnav {
+				overflow: hidden;
+				background-color: black;
+			}
+			.topnav a{
+				float: left;
+				display: block;
+				color: hotpink;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			/* change color on hover */
+			.topnav a:hover {
+				background-color: hotpink;
+				color: black;
+			}
+
+
+			/* create two unequal columns that floats next to each other */
+			/* left column */
+			.leftcolumn {
+				float: left;
+				width: 75%;
+			}
+
+			/* right column */
+			.rightcolumn {
+				float: left;
+				width: 25%;
+				background-color: thistle;
+				padding-left: 20px;
+			}
+
+			/* fake image */
+			.fakeimg {
+				background-color: pink;
+				width: 100%;
+				padding: 20px;
+			}
+			/* add a card effect for articles */
+			.card {
+				background-color: mistyrose;
+				padding: 20px;
+				margin-top: 20px;
+			}
+
+			/* clear floats arter the columns */
+			.row: :after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			/* footer */
+			.footer {
+				padding: 20px;
+				text-align: center;
+				background: thistle;
+				margin-top: 20px;
+			}
+
+			/* responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+			@media screen and (max-width: 500px) {
+				.leftcolumn, .rightcolumn {
+					width: 100%;
+					padding: 0;
+				}
+			}
+
+			/* responsive layout - when the screen is less than 400px, make the navigation links stack on of each other instead of next to each other */
+			@media screen and (max-width: 400px) {
+				.topnav a {
+					float: none;
+					width: 100%;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>my world</h1>
+			<p>selamat datang di my world</p>
+		</div>
+
+		<div class="topnav">
+			<a href="home.html"></a>
+			<a href="link1.html">link</a>
+			<a href="link2.html">link</a>
+			<a href="link3.html" style="float:right">link</a>
+		</div>
+
+		<div class="row">
+			<div class="leftcolumn">
+				<div class="card">
+					<h2>LITTLE PONY</h2>
+					<h5>tanggal 17 mei 2024, dibuat</h5>
+					<img src="ltyp2.jpg"height="200px"width="100%">
+					<p>bunga tulip</p>
+					<p>Bercerita tentang kehidupan para kuda poni di negeri Equestria, My Little Pony berhasil menjadi animasi favorit si Kecil masa kini. Twilight Sparkle, Pinkie Pie, Rarity, Rainbow Dash, Fluttershy, Applejack menjadi tokoh utama dalam cerita My Little Pony. </p>
+				</div>
+				<div class="card">
+					<h2>RARITY</h2>
+					<h5>FLUTTERSHY</h5>
+					<img src="kl.jpg" style="height:500px">
+					<p>mataharii</p>
+					<p>Rarity bekerja terlalu keras dan, meskipun desain teman-temannya sangat buruk dalam mode, dia terus membuatnya untuk memuaskan teman-temannya.</p>
+				</div>
+			</div>
+			<div class="rightcolumn">
+				<div class="card">
+					<h2></h2>
+					<img src="kuda pony 4.jpg" style="height:400px;">
+					<p>Fluttershy merupakan kuda pegasus berwarna kuning dengan surai merah muda yang panjang menjuntai. Karakter ini berdasarkan dari My Little Pony generasi pertama yaitu earth pony Posey.</p>
+					</div>
+					<div class="card">
+						<h2>MY LITTLE PONY</h2>
+                    <img src="kuda pony 2.jpg"height="250px"width="100%">
+                    <img src="tulip.jpg"height="250px"width="100%">
+                    <img src="kuda pony 5.jpg"height="250px"width="100%">
+					</div>
+					<div class="card">
+						<h3>follow me</h3>
+						<p>@lindaaftw</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<p> copyright &copy; linda fatmawati. AII Rights</p>
+			</div>
+
+		</body>
+	</hmtl>
+
